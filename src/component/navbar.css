@@ -10,7 +10,8 @@
   background-color: #3F3067;   
   align-items: center;
   text-align: center;
-  font-size: 35px;
+  font-size: 17px;
+  height: 133px;
   
 }
 
@@ -22,8 +23,8 @@
   }
 
 .logo{
-  width: 189px;
-  height: 184px;
+  width: 177px;
+  height: 161px;
 }
 .logi{
   margin-right: 40px;
