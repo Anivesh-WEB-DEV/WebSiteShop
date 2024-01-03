@@ -1,0 +1,41 @@
+.cart {
+  margin-top: 1rem; /* You can adjust the value as needed */
+ ;
+}
+.main{
+  display: flex;
+  justify-content: space-evenly;
+  /* margin-top: 10px; */
+  color:rgb(241 228 228);
+  background-color: #3F3067;   
+  align-items: center;
+  text-align: center;
+  font-size: 35px;
+  
+}
+
+
+.cart2{
+  width: 68px !important;
+  height: 60px !important;
+  color: rgb(241 228 228);
+  }
+
+.logo{
+  width: 189px;
+  height: 184px;
+}
+.logi{
+  margin-right: 40px;
+}
+.main h1{
+  text-align: center;
+}
+/* navbar.css */
+
+.lognavbar{
+  text-decoration: none !important;
+  color: rgb(241 228 228);
+  font-size: 37px;
+}
+
