@@ -50,10 +50,11 @@ text-align: center;
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 62px;
+    margin-top: 14px;
     background: #3F3067;
     padding-bottom: 30px;
-    width: 560px;
+    width: 437px;
+    height: 419px;
    }
    .header{
     display: flex;
@@ -66,7 +67,7 @@ text-align: center;
    }
    .text{
     color: white;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 700;
    }
 
@@ -88,8 +89,8 @@ text-align: center;
     display: flex;
     align-items: center;
     margin: auto;
-    width: 480px;
-    height: 80px;
+    width: 264px;
+    height: 343px;
     background: #eaeaea;
     border-radius: 6px;
    }
@@ -99,13 +100,13 @@ text-align: center;
    }
 
    .input input{
-    height: 50px;
-    width: 400px;
+    height: 30px;
+    width: 319px;
     background: transparent;
     border: none;
     outline: none;
     color: #797979;
-    font-size: 19px;
+    font-size: 18px;
    }
    
    .forgot-password{
@@ -128,12 +129,12 @@ text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 220px;
-    height: 59px;
+    width: 130px;
+    height: 412px;
     color: #fff;
     background: #CC2131;
     border-radius: 59px;
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 700;
     cursor: pointer;
    }
