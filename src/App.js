@@ -13,7 +13,7 @@ import "react-toastify/dist/ReactToastify.css";
 const App = () =>{
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename='/subdirectory'>
       <ToastContainer/>
         <Navbar />
         <Routes>
