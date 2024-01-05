@@ -5,7 +5,7 @@ import Home from './Home';
 import Cart from './component/cart';
 // import Login from './component/login/login';
 import NotFound from './component/NotFound';
-import Signup from './component/signup/signup';
+import Signup from './component/PositionMenu/PositionLogo';
 import {ToastContainer} from "react-toastify"
 import "react-toastify/dist/ReactToastify.css";
 

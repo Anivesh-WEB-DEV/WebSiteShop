@@ -64,15 +64,15 @@ import { styled } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
 import { useSelector,useDispatch } from 'react-redux';
 import { getTotals } from '../redux/slice/cart';
-import { useAuth0 } from "@auth0/auth0-react";
-import Avatar from '@mui/material/Avatar';
-import Stack from '@mui/material/Stack';
+
+
+import PositionedMenu from './PositionMenu/PositionLogo';
 
 const Navbar = () => {
 
   const cart= useSelector(state=>state.cart)
   const dispatch =useDispatch();
-  const { loginWithRedirect , logout , isAuthenticated , user } = useAuth0();
+ 
   // Initialize AOS
   useEffect(()=>{
     dispatch(getTotals());
@@ -99,29 +99,7 @@ const Navbar = () => {
      </div>
 
      <div className="main2">
-     {
-           isAuthenticated && (
-           <div className="stack ">
-             <Stack>
-              <Avatar alt="Remy Sharp" src={user.picture}/>
-              <p>{user.name}</p>
-            </Stack>
-           </div>
-          )
-        }
-        
-        
-        {
-          isAuthenticated ? (
-
-           <button className='auth' onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
-           Log Out
-         </button>
-          ) : (
-
-            <button className='auth' onClick={() => loginWithRedirect()}>Log In</button>
-          )
-        }
+    <PositionedMenu/>
        <Link to="/cart">
        <StyledBadge className='cart' badgeContent={ cart.cartTotalQuantity} color="primary">
           <ShoppingCartIcon className='cart2' />
