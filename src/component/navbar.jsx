@@ -89,18 +89,24 @@ const Navbar = () => {
   }));
 
   return (
-    <div>
+    
       <div className="main">
-        <Link to='/'><div className="logi">
+     <div className="main1">
+     <Link to='/'><div className="logi">
           <img className='logo' src={logo} alt="" />
         </div></Link>
         <h1 data-aos="fade-down" data-aos-duration="2000">Welcome to Adarsh Store</h1>
-        {
+     </div>
+
+     <div className="main2">
+     {
            isAuthenticated && (
-            <Stack>
+           <div className="stack ">
+             <Stack>
               <Avatar alt="Remy Sharp" src={user.picture}/>
               <p>{user.name}</p>
             </Stack>
+           </div>
           )
         }
         
@@ -121,8 +127,11 @@ const Navbar = () => {
           <ShoppingCartIcon className='cart2' />
         </StyledBadge>
        </Link>
+     </div>
+
+       
       </div>
-    </div>
+  
   );
 }
 

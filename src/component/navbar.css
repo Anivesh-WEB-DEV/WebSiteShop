@@ -4,12 +4,10 @@
 }
 .main{
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-around; */
   /* margin-top: 10px; */
   color:rgb(241 228 228);
   background-color: #3F3067;   
-  align-items: center;
-  text-align: center;
   font-size: 17px;
   height: 133px;
   
@@ -47,5 +45,23 @@
   border-radius: 6px;
   border: none;
 }
+
+.main1{
+  display: flex;
+  align-items: center;
+  width:75%;
+  justify-content: space-around;
+}
+
+.main2{
+  display: flex;
+  align-items: center;
+  width:25%;
+  justify-content: space-around; 
+
+}
+  .main h1{
+    font-size: 50px;
+  }
 
 
