@@ -22,8 +22,7 @@
 }
 
 .logo {
-  width: 177px;
-  height: 161px;
+  width: 90px;
 }
 .logi {
   margin-right: 40px;
@@ -50,16 +49,102 @@
 .main1 {
   display: flex;
   align-items: center;
-  width: 75%;
+  width: 25%;
   justify-content: space-around;
 }
 
 .main2 {
   display: flex;
   align-items: center;
-  width: 25%;
-  justify-content: space-around;
+  width: 26%;
+  justify-content: flex-end;
+  margin-left: 25px;
+  gap: 25px;
+}
+.hamburger {
+  display: none;
 }
 .main h1 {
-  font-size: 50px;
+  font-size: 80px;
 }
+
+@media screen and (max-width: 768px) {
+  .main {
+    height: auto; 
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .main1, .main2 {
+    width: 100%; /* Full width for small screens */
+    margin-top: 1rem; /* Add margin between sections */
+  }
+
+  .main1 {
+    justify-content: center; /* Center items horizontally */
+  }
+
+  .main2 {
+    justify-content: end;
+     /* Center items horizontally */
+  }
+  .cart2{
+    width: "13px"; height: "5px";
+  }
+
+  .logo {
+    width: 80px; /* Adjust the width of the logo for small screens */
+  }
+
+  .hamburger {
+    display: block; /* Display hamburger menu icon for small screens */
+    font-size: 24px; /* Set font size for hamburger menu icon */
+  }
+
+  .main2 > *:not(:last-child) {
+    margin-right: 1rem; /* Add margin between items */
+  }
+}
+
+/* 
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .main {
+    height: auto; 
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .main1, .main2 {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .main1 {
+    justify-content: space-between; 
+  }
+  
+  .main2 {
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 1rem; 
+  }
+
+  .main1 h1 {
+    font-size: 8px !important;
+  }
+}
+
+@media screen and (min-width: 769px) {
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .main {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .main {
+    font-size: 20px;
+  }
+} */

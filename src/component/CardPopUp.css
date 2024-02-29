@@ -46,9 +46,14 @@
   border: 1px solid #e0e0e0;
   margin-bottom: 2px;
 }
+.btn{
+  background-color: #3f3067;
+  color: #e0e0e0;
+  border:
+}
 
 .thumbnail:hover {
-  border: 2px solid #1976d2;
+  border: 1px solid #1976d2;
   transition: 0.5s;
   transform: scale(0.9);
 }

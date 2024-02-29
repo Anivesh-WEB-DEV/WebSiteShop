@@ -98,10 +98,10 @@ const ScrollDialog = ({ car, onClose }) => {
               >
                 {({ zoomIn, zoomOut, resetTransform, ...rest }) => (
                   <React.Fragment>
-                    <div className="tools">
-                      <button onClick={() => zoomIn()}>+</button>
-                      <button onClick={() => zoomOut()}>-</button>
-                      <button onClick={() => resetTransform()}>x</button>
+                    <div className="tools" style={{marginLeft:"5px"}}>
+                      <button onClick={() => zoomIn()} className="btn">+</button>
+                      <button onClick={() => zoomOut()} className="btn">-</button>
+                      <button onClick={() => resetTransform()} className="btn">x</button>
                     </div>
                     <TransformComponent>
                       <img
