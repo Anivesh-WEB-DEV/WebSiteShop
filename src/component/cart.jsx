@@ -56,7 +56,7 @@ const Cart = () => {
             {cart.cartItems?.map((cartItem) => (
               <div className="cart-item" key={cartItem.id}>
                 <div className="cart-product">
-                  <img src={cartItem.image} alt={cartItem.title} />
+                  <img src={cartItem.thumbnail} alt={cartItem.title} />
                   <div>
                     <h3>{cartItem.title}</h3>
                     <p>
@@ -67,9 +67,7 @@ const Cart = () => {
                     </button>
                   </div>
                 </div>
-                <div className="cart-product-price">
-                  ${cartItem.rating.rate}
-                </div>
+                <div className="cart-product-price">${cartItem.price}</div>
                 <div className="cart-product-quantity">
                   <button onClick={() => handleDecreaseCart(cartItem)}>
                     -
@@ -80,7 +78,7 @@ const Cart = () => {
                   </button>
                 </div>
                 <div className="cart-product-total-price">
-                  ${cartItem.rating.rate * cartItem.cartQuantity}
+                  ${cartItem.price * cartItem.cartQuantity}
                 </div>
               </div>
             ))}

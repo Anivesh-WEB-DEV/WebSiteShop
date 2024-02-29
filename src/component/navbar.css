@@ -1,44 +1,45 @@
 .cart {
-  margin-top: 1rem; /* You can adjust the value as needed */
- ;
+  margin-top: 1rem;
 }
-.main{
+
+.main {
   display: flex;
-  /* justify-content: space-around; */
-  /* margin-top: 10px; */
-  color:rgb(241 228 228);
-  background-color: #3F3067;   
+  color: rgb(241 228 228);
+  background-color: #3f3067;
   font-size: 17px;
   height: 133px;
-  
 }
 
+.css-13ce0nn-MuiBadge-root .MuiBadge-badge {
+  background: #cc2131;
+  color: white;
+}
 
-.cart2{
+.cart2 {
   width: 68px !important;
   height: 60px !important;
   color: rgb(241 228 228);
-  }
+}
 
-.logo{
+.logo {
   width: 177px;
   height: 161px;
 }
-.logi{
+.logi {
   margin-right: 40px;
 }
-.main h1{
+.main h1 {
   text-align: center;
 }
 /* navbar.css */
 
-.lognavbar{
+.lognavbar {
   text-decoration: none !important;
   color: rgb(241 228 228);
   font-size: 37px;
 }
 
-.auth{
+.auth {
   font-size: 15px;
   width: 78px;
   height: 29px;
@@ -46,29 +47,19 @@
   border: none;
 }
 
-.main1{
+.main1 {
   display: flex;
   align-items: center;
-  width:75%;
+  width: 75%;
   justify-content: space-around;
 }
 
-.main2{
+.main2 {
   display: flex;
   align-items: center;
-  width:25%;
-  justify-content: space-around; 
-
+  width: 25%;
+  justify-content: space-around;
 }
-  .main h1{
-    font-size: 50px;
-  }
-
-
-
-
-
-
-
-
-
+.main h1 {
+  font-size: 50px;
+}

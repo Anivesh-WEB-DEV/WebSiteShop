@@ -14,21 +14,19 @@
 
 .card {
   flex: 0 1 300px;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   transition: transform 0.3s;
   margin-bottom: 20px;
   width: 100%;
   padding: 1rem;
   height: 452px;
-
 }
 .css-1ri6ub7-MuiPaper-root-MuiCard-root {
   height: 384px !important;
 }
-.css-h93ljk-MuiTypography-root{
+.css-h93ljk-MuiTypography-root {
   font-size: 1.2rem !important;
 }
-.css-46bh2p-MuiCardContent-root{
+.css-46bh2p-MuiCardContent-root {
   padding: 16px 16px 0px 16px !important;
 }
 .card:hover {
@@ -64,7 +62,7 @@
 .card_price {
   font-size: 1.2rem;
   font-weight: bold;
-  text-align:left;
+  text-align: left;
   margin: 15px 0px !important;
 }
 
@@ -79,23 +77,22 @@
   color: #ff9800;
   font-size: 1.1rem;
 }
-.card_rating{
- float: right;
+.card_rating {
+  float: right;
 }
-.card_count{
+.card_count {
   margin-left: -14px;
   padding-left: 24px;
   font-size: 13px;
 }
 
-.card_discription{
-  
+.card_discription {
   display: -webkit-box;
-  -webkit-line-clamp: 3; 
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.css-o69gx8-MuiCardMedia-root{
+.css-o69gx8-MuiCardMedia-root {
   display: block;
   -webkit-background-size: cover;
   background-size: cover;
@@ -103,21 +100,20 @@
   -webkit-background-position: center;
   background-position: center;
   width: 100%;
-  object-fit: contain!important;
+  object-fit: contain !important;
 }
-.css-46bh2p-MuiCardContent-root{
+.css-46bh2p-MuiCardContent-root {
   padding: 16px 16px 0 16px;
 }
-.css-1knaqv7-MuiButtonBase-root-MuiButton-root{
-min-width: 102px !important;
+.css-1knaqv7-MuiButtonBase-root-MuiButton-root {
+  min-width: 102px !important;
 }
-.css-1t6e9jv-MuiCardActions-root{
-margin-top: -12px;
+.css-1t6e9jv-MuiCardActions-root {
+  margin-top: -12px;
 }
 .css-rhsghg {
   object-fit: contain !important;
 }
-.css-w88nxk{
+.css-w88nxk {
   max-width: 263px !important;
 }
-
