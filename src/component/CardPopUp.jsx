@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import Navbar from "./navbar";
 
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
-import ReactImageMagnify from "react-image-magnify";
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import Dialog from "@mui/material/Dialog";
 import AppBar from "@mui/material/AppBar";
 import IconButton from "@mui/material/IconButton";
@@ -93,23 +93,27 @@ const ScrollDialog = ({ car, onClose }) => {
               ))}
             </div>
             <div className="product-image-container">
-              <ReactImageMagnify
-                {...{
-                  smallImage: {
-                    alt: "Wristwatch by Ted Baker London",
-                    isFluidWidth: true,
-                    className: "mainimg",
-                    src: selectedImage,
-                    width: 500,
-                    height: 400,
-                  },
-                  largeImage: {
-                    src: selectedImage,
-                    width: 1500,
-                    height: 2500,
-                  },
-                }}
-              />
+              <TransformWrapper
+                initialScale={1}
+              >
+                {({ zoomIn, zoomOut, resetTransform, ...rest }) => (
+                  <React.Fragment>
+                    <div className="tools">
+                      <button onClick={() => zoomIn()}>+</button>
+                      <button onClick={() => zoomOut()}>-</button>
+                      <button onClick={() => resetTransform()}>x</button>
+                    </div>
+                    <TransformComponent>
+                      <img
+                        src={selectedImage}
+                        alt="Wristwatch by Ted Baker London"
+                        style={{ width: 500, height: 400 }} 
+                      />
+                      
+                    </TransformComponent>
+                  </React.Fragment>
+                )}
+              </TransformWrapper>
             </div>
           </div>
           <div className="product-details">
