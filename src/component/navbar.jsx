@@ -27,7 +27,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
 const drawerWidth = 240;
-const navItems = ["Welcome to Adarsh Store"];
+const navItems = ["Shopping React App"];
 
 const Navbar = (props) => {
   const { window } = props;
@@ -106,7 +106,7 @@ const Navbar = (props) => {
               <Button
                 key={item}
                 sx={{
-                  color: "rgb(241 228 228)",
+                  color: "#f7207a",
                   fontSize: "35px",
                   fontWeight: "700",
                 }}
