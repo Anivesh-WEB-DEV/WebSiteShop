@@ -4,8 +4,8 @@
 
 .main {
   display: flex;
-  color: rgb(241 228 228);
-  background-color: #3f3067;
+  color: #f7207a;
+/*   background-color: #3f3067; */
   font-size: 17px;
   height: 133px;
 }
